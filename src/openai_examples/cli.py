@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 input_argument = click.argument("input", required=True, nargs=-1)
 
 # @click.group()
-@shell(prompt='ontobot > ', intro='Starting my app...')
+@shell(prompt='chatbot > ', intro='Starting my app...')
 @click.option("-v", "--verbose", count=True)
 @click.option("-q", "--quiet")
 @click.version_option(__version__)
