@@ -73,7 +73,7 @@ Here's the table with the CURIE, label, and confidence:
 ```
 
 # Disclaimer:
-This is just a simple wrapper around OpenAI's GPT and results are not a 100% accurate despite of the confidence % expressed above. For e.g.: `ENVO:00002007` is `sediment` and the GPT annotates `Sorghum` as `sediment`.
+This is just a simple wrapper around OpenAI's GPT and results are not a 100% accurate despite of the confidence % expressed above. For e.g.: `ENVO:00002007` is `sediment` and the GPT annotates `Sorghum` as `sediment` with 90% confidence.
 # Acknowledgements
 
 This [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/README.html) project was developed from the [monarch-project-template](https://github.com/monarch-initiative/monarch-project-template) template and will be kept up-to-date using [cruft](https://cruft.github.io/cruft/).
