@@ -9,7 +9,9 @@ This is a playground for experimenting with OpenAI
 - `poetry install`
 
 # How do I interact?
-> `chatbot`
+```
+chatbot
+```
 
 # Commands
 ## `run`
