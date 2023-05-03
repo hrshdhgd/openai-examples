@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openai-examples"
-version = "0.0.0.post22.dev0+6181b4b"
+version = "0.0.0"
 description = "openai-examples"
 authors = ["Harshad Hegde <hhegde@lbl.gov>"]
 license = "MIT"
@@ -39,7 +39,7 @@ docs = [
     ]
 
 [tool.poetry-dynamic-versioning]
-enable = false
+enable = true
 vcs = "git"
 style = "pep440"
 
