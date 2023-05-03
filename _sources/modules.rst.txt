@@ -1,0 +1,7 @@
+openai_examples
+===============
+
+.. toctree::
+   :maxdepth: 4
+
+   openai_examples

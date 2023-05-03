@@ -1,0 +1,29 @@
+openai\_examples package
+========================
+
+Submodules
+----------
+
+openai\_examples.cli module
+---------------------------
+
+.. automodule:: openai_examples.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+openai\_examples.main module
+----------------------------
+
+.. automodule:: openai_examples.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: openai_examples
+   :members:
+   :undoc-members:
+   :show-inheritance:
