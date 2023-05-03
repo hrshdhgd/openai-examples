@@ -54,7 +54,10 @@ chatbot > extract Bioenergy Sorghum Compendium The proposed YR4 studies will add
 ```
 Here is the annotated statement with ontology CURIEs and confidence levels:
 
-Bioenergy Sorghum Compendium [OBI:0001932] The proposed YR4 [OBI:0002021] studies will add new information from RNA sequencing profiles [OBI:0001853] on N remobilization responses [GO:0051704] to water deficit [PATO:0000144] ABA [CHEBI:25212] stem growth regulation [GO:0048825] stem composition [PO:0020030]. 
+Bioenergy Sorghum Compendium [OBI:0001932] The proposed YR4 [OBI:0002021] \
+studies will add new information from RNA sequencing profiles [OBI:0001853]\
+on N remobilization responses [GO:0051704] to water deficit [PATO:0000144]\
+ABA [CHEBI:25212] stem growth regulation [GO:0048825] stem composition [PO:0020030]. 
 
 Confidence level: 90%
 ```
