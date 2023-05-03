@@ -14,7 +14,9 @@ This is a playground for experimenting with OpenAI
 # Commands
 ## `run`
 
->`run Write me a python code to generate Fibonacci Sequence`
+```
+run Write me a python code to generate Fibonacci Sequence
+```
 ..generates 
 ```
 Sure, here's a simple Python code to generate the Fibonacci sequence up to a specified number of terms:
@@ -42,7 +44,9 @@ This will output the following sequence: `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]`
 
 ## `extract`
 
->`extract Bioenergy Sorghum Compendium The proposed YR4 studies will add new information from RNA sequencing profiles on N remobilization responses to water deficit ABA stem growth regulation stem composition`
+```
+extract Bioenergy Sorghum Compendium The proposed YR4 studies will add new information from RNA sequencing profiles on N remobilization responses to water deficit ABA stem growth regulation stem composition
+```
 
 ..generates 
 ```
