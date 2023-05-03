@@ -7,7 +7,7 @@ from dotenv import find_dotenv, load_dotenv
 _ = load_dotenv(find_dotenv())  # read local .env file
 
 
-class OpenAIClient:
+class ChatBotClient:
     """Client class."""
 
     model: str = "gpt-3.5-turbo"
@@ -50,14 +50,14 @@ class OpenAIClient:
 
 def run(input: str):
     """Define API."""
-    client = OpenAIClient()
+    client = ChatBotClient()
     client.update_context(role="user", content=input)
     return client.get_completion_from_messages(client.context)
 
 
 def extract(input: str):
     """Extract CURIEs."""
-    client = OpenAIClient()
+    client = ChatBotClient()
     rule = """
         You are a responsible to annotate tokens\
         in a statement with ontology CURIE.\

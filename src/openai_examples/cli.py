@@ -5,7 +5,7 @@ import click
 from click_shell import shell
 
 from openai_examples import __version__
-from openai_examples.main import extract, run
+from openai_examples.chatbot import extract, run
 
 __all__ = [
     "main",
@@ -50,14 +50,33 @@ def help(ctx, subcommand):
 @main.command("run")
 @input_argument
 def click_run(input: str):
-    """Run the openai-examples's demo command."""
+    """
+    Chatbot's `run` command.
+
+    Example:
+
+        run Write me a python code to generate Fibonacci Sequence
+
+    generates the corresponding python code.
+    """
     click.echo(run(" ".join(input)))
 
 
 @main.command("extract")
 @input_argument
 def click_extract(input: str):
-    """Run the openai-examples's demo command."""
+    """
+    Chatbot's `extract` command.
+
+    Example:
+
+        extract Bioenergy Sorghum Compendium The proposed YR4 studies will add
+        new information from RNA sequencing profiles on N remobilization
+        responses to water deficit ABA stem growth regulation stem composition.
+
+    generates a result containing annotations of tokens in the input and
+    a tabular representation of the same.
+    """
     click.echo(extract(" ".join(input)))
 
 
