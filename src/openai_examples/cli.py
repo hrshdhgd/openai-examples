@@ -3,6 +3,7 @@ import logging
 
 import click
 from click_shell import shell
+
 from openai_examples import __version__
 from openai_examples.main import demo
 
@@ -13,8 +14,8 @@ __all__ = [
 logger = logging.getLogger(__name__)
 input_argument = click.argument("input", required=True, nargs=-1)
 
-# @click.group()
-@shell(prompt='chatbot > ', intro='Starting my app...')
+
+@shell(prompt="chatbot > ", intro="Starting my app...")
 @click.option("-v", "--verbose", count=True)
 @click.option("-q", "--quiet")
 @click.version_option(__version__)
@@ -32,7 +33,6 @@ def main(verbose: int, quiet: bool):
         logger.setLevel(level=logging.WARNING)
     if quiet:
         logger.setLevel(level=logging.ERROR)
-
 
 
 @main.command()
