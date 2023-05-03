@@ -61,7 +61,9 @@ def extract(input: str):
     rule = """
         You are a responsible to annotate tokens\
         in a statement with ontology CURIE.\
-        Provide a confidence level as a percentage too.
+        Provide a confidence level as a percentage too.\
+        Additionaly, provide a table with 3 columns:\
+        'CURIE', 'label' , 'confidence'.
     """
     client.update_context(role="system", content=rule)
     client.update_context(role="user", content=input)

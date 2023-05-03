@@ -52,15 +52,28 @@ chatbot > extract Bioenergy Sorghum Compendium The proposed YR4 studies will add
 
 ..generates 
 ```
-Here is the annotated statement with ontology CURIEs and confidence levels:
+Sure, I can annotate the tokens in the statement with ontology CURIE and provide a confidence level as a percentage. Here's the annotated statement:
 
-Bioenergy Sorghum Compendium [OBI:0001932] The proposed YR4 [OBI:0002021]
-studies will add new information from RNA sequencing profiles [OBI:0001853]
-on N remobilization responses [GO:0051704] to water deficit [PATO:0000144]
-ABA [CHEBI:25212] stem growth regulation [GO:0048825] stem composition [PO:0020030]. 
+Bioenergy Sorghum Compendium [BSC:0000010] The proposed YR4 studies will add new information from RNA sequencing profiles on N remobilization responses to water deficit [PATO:0000465] ABA [CHEBI:25212] stem growth regulation [GO:0048831] stem composition [PO:0020030]
 
-Confidence level: 90%
+The confidence level for the annotations is 80%.
+
+Here's the table with the CURIE, label, and confidence:
+
+| CURIE | Label | Confidence |
+|-------|-------|------------|
+| ENVO:00002007 | Sorghum | 90% |
+| ENVO:01000220 | Bioenergy | 80% |
+| OBI:0600047 | RNA sequencing | 70% |
+| NCBITaxon:114 | Nitrogen | 80% |
+| ENVO:01000225 | Water deficit | 90% |
+| CHEBI:25212 | Abscisic acid | 70% |
+| PO:0009047 | Stem growth | 80% |
+| PO:0020039 | Stem composition | 80% |
 ```
+
+# Disclaimer:
+This is just a simple wrapper around OpenAI and results are not a 100% accurate despite of the confidence % expressed above.
 # Acknowledgements
 
 This [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/README.html) project was developed from the [monarch-project-template](https://github.com/monarch-initiative/monarch-project-template) template and will be kept up-to-date using [cruft](https://cruft.github.io/cruft/).
