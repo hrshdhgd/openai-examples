@@ -5,7 +5,7 @@ import click
 from click_shell import shell
 
 from openai_examples import __version__
-from openai_examples.main import demo
+from openai_examples.main import extract, run
 
 __all__ = [
     "main",
@@ -47,11 +47,18 @@ def help(ctx, subcommand):
         click.echo(subcommand_obj.get_help(ctx))
 
 
-@main.command()
+@main.command("run")
 @input_argument
-def run(input: str):
+def click_run(input: str):
     """Run the openai-examples's demo command."""
-    click.echo(demo(" ".join(input)))
+    click.echo(run(" ".join(input)))
+
+
+@main.command("extract")
+@input_argument
+def click_extract(input: str):
+    """Run the openai-examples's demo command."""
+    click.echo(extract(" ".join(input)))
 
 
 if __name__ == "__main__":

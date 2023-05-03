@@ -48,12 +48,25 @@ class OpenAIClient:
         self.context.append({"role": role, "content": content})
 
 
-def demo(input: str):
+def run(input: str):
     """Define API."""
     client = OpenAIClient()
     client.update_context(role="user", content=input)
     return client.get_completion_from_messages(client.context)
 
 
+def extract(input: str):
+    """Extract CURIEs."""
+    client = OpenAIClient()
+    rule = """
+        You are a responsible to annotate tokens\
+        in a statement with ontology CURIE.\
+        Provide a confidence level as a percentage too.
+    """
+    client.update_context(role="system", content=rule)
+    client.update_context(role="user", content=input)
+    return client.get_completion_from_messages(client.context)
+
+
 if __name__ == "__main__":
-    demo(input="Hello, world!")
+    run(input="Hello, world!")
