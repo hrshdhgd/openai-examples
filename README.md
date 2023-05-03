@@ -8,7 +8,7 @@ This is a playground for experimenting with OpenAI
 - `pip install poetry`
 - `poetry install`
 
-# How do I interact?
+# How to begin?
 ```
 > chatbot
 ```
