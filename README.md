@@ -17,7 +17,7 @@ This is a playground for experimenting with OpenAI
 ## `run`
 
 ```
-> run Write me a python code to generate Fibonacci Sequence
+chatbot > run Write me a python code to generate Fibonacci Sequence
 ```
 ..generates 
 ```
@@ -47,7 +47,7 @@ This will output the following sequence: `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]`
 ## `extract`
 
 ```
-> extract Bioenergy Sorghum Compendium The proposed YR4 studies will add new information from RNA sequencing profiles on N remobilization responses to water deficit ABA stem growth regulation stem composition
+chatbot > extract Bioenergy Sorghum Compendium The proposed YR4 studies will add new information from RNA sequencing profiles on N remobilization responses to water deficit ABA stem growth regulation stem composition
 ```
 
 ..generates 
