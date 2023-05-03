@@ -54,7 +54,6 @@ def click_run(input: str):
     Chatbot's `run` command.
 
     Example:
-
         run Write me a python code to generate Fibonacci Sequence
 
     generates the corresponding python code.
@@ -69,7 +68,6 @@ def click_extract(input: str):
     Chatbot's `extract` command.
 
     Example:
-
         extract Bioenergy Sorghum Compendium The proposed YR4 studies will add
         new information from RNA sequencing profiles on N remobilization
         responses to water deficit ABA stem growth regulation stem composition.
