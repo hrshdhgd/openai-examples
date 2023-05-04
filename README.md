@@ -9,6 +9,7 @@ This is a playground for experimenting with OpenAI
 - `poetry install`
 
 # How to begin?
+Save your OpenAI secret key as an environmental variable `OPENAI_API_KEY`
 ```
 > chatbot
 ```

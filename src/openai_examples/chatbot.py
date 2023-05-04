@@ -23,7 +23,7 @@ class ChatBotClient:
     def __post_init__(self):
         """Initialize the object."""
         if not openai.api_key:
-            openai.api_key = os.getenv("OPENAI_API_KEY_2")
+            openai.api_key = os.getenv("OPENAI_API_KEY")
 
     def get_completion(self, prompt) -> str:
         """Return response via API."""
