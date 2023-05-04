@@ -10,7 +10,8 @@ _ = load_dotenv(find_dotenv())  # read local .env file
 class ChatBotClient:
     """Client class."""
 
-    model: str = "gpt-3.5-turbo"
+    # model: str = "gpt-3.5-turbo"
+    model: str = "gpt-4-0314"
     context = [
         {
             "role": "system",
