@@ -7,9 +7,9 @@ This is a playground for experimenting with OpenAI
 - Create a virtual environment
 - `pip install poetry`
 - `poetry install`
+- Save your OpenAI secret key as an environmental variable `OPENAI_API_KEY`
 
 # How to begin?
-Save your OpenAI secret key as an environmental variable `OPENAI_API_KEY`
 ```
 > chatbot
 ```
