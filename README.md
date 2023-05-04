@@ -53,28 +53,62 @@ chatbot > extract Bioenergy Sorghum Compendium The proposed YR4 studies will add
 
 ..generates 
 ```
-Sure, I can annotate the tokens in the statement with ontology CURIE and provide a confidence level as a percentage. Here's the annotated statement:
+CURIE: NCBITaxon:4558
+Label: Sorghum
+Confidence: 90%
 
-Bioenergy Sorghum Compendium [BSC:0000010] The proposed YR4 studies will add new information from RNA sequencing profiles on N remobilization responses to water deficit [PATO:0000465] ABA [CHEBI:25212] stem growth regulation [GO:0048831] stem composition [PO:0020030]
+CURIE: CHEBI:2365
+Label: Abscisic acid (ABA)
+Confidence: 95%
 
-The confidence level for the annotations is 80%.
+CURIE: SO:0000988
+Label: RNA sequencing
+Confidence: 90%
 
-Here's the table with the CURIE, label, and confidence:
+CURIE: GO:0015979
+Label: Photosynthesis
+Confidence: 80%
 
-| CURIE | Label | Confidence |
-|-------|-------|------------|
-| ENVO:00002007 | Sorghum | 90% |
-| ENVO:01000220 | Bioenergy | 80% |
-| OBI:0600047 | RNA sequencing | 70% |
-| NCBITaxon:114 | Nitrogen | 80% |
-| ENVO:01000225 | Water deficit | 90% |
-| CHEBI:25212 | Abscisic acid | 70% |
-| PO:0009047 | Stem growth | 80% |
-| PO:0020039 | Stem composition | 80% |
+CURIE: GO:0008150
+Label: Biological process
+Confidence: 80%
+
+CURIE: GO:0009628
+Label: Response to abiotic stimulus
+Confidence: 85%
+
+CURIE: GO:0006970
+Label: Response to osmotic stress
+Confidence: 80%
+
+CURIE: GO:0009414
+Label: Response to water deprivation
+Confidence: 85%
+
+CURIE: GO:0048364
+Label: Root development
+Confidence: 80%
+
+CURIE: GO:0003700
+Label: DNA-binding transcription factor activity
+Confidence: 80%
+
+| CURIE         | Label                             | Confidence |
+|---------------|-----------------------------------|------------|
+| NCBITaxon:4558| Sorghum                           | 90%        |
+| CHEBI:2365    | Abscisic acid (ABA)               | 95%        |
+| SO:0000988    | RNA sequencing                    | 90%        |
+| GO:0015979    | Photosynthesis                    | 80%        |
+| GO:0008150    | Biological process                | 80%        |
+| GO:0009628    | Response to abiotic stimulus      | 85%        |
+| GO:0006970    | Response to osmotic stress        | 80%        |
+| GO:0009414    | Response to water deprivation     | 85%        |
+| GO:0048364    | Root development                  | 80%        |
+| GO:0003700    | DNA-binding transcription factor  | 80%        |
 ```
 
 # Disclaimer:
-This is just a simple wrapper around OpenAI's GPT and the results are not a 100% accurate despite of the confidence % expressed above. For e.g.: [`ENVO:00002007`](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002007) is `sediment` and the GPT annotates `Sorghum` [[NCBITaxon:1699109](https://www.ebi.ac.uk/ols/ontologies/ncbitaxon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_4557)] as `sediment` with 90% confidence.
+This is just a simple wrapper around OpenAI's GPT and the results are not a 100% accurate despite of the confidence % expressed above. 
 # Acknowledgements
 
 This [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/README.html) project was developed from the [monarch-project-template](https://github.com/monarch-initiative/monarch-project-template) template and will be kept up-to-date using [cruft](https://cruft.github.io/cruft/).
