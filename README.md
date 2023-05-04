@@ -24,7 +24,7 @@ chatbot > run Write me a python code to generate Fibonacci Sequence
 ```
 Sure, here's a simple Python code to generate the Fibonacci sequence up to a specified number of terms:
 
-```python
+'''python
 # Function to generate the Fibonacci sequence up to n terms
 def fibonacci(n):
     # Initialize the first two terms of the sequence
@@ -41,7 +41,7 @@ def fibonacci(n):
 
 # Example usage: generate the first 10 terms of the Fibonacci sequence
 fibonacci(10)
-
+'''
 
 This will output the following sequence: `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]`
 ```
