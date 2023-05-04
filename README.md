@@ -9,6 +9,15 @@ This is a playground for experimenting with OpenAI
 - `poetry install`
 - Save your OpenAI secret key as an environmental variable `OPENAI_API_KEY`
 
+## Get list of models
+```
+make get-models
+```
+This runs the script 
+```
+curl https://api.openai.com/v1/models -H "Authorization: Bearer $OPENAI_API_KEY" > models.json
+```
+`models.json` lists all available models at your disposal.
 # How to begin?
 ```
 > chatbot
