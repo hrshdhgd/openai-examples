@@ -41,9 +41,10 @@ def fibonacci(n):
 
 # Example usage: generate the first 10 terms of the Fibonacci sequence
 fibonacci(10)
-```
+
 
 This will output the following sequence: `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]`
+```
 
 ## `extract`
 
