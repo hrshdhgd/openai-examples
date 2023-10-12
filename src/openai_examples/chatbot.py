@@ -3,6 +3,13 @@ import os
 
 import openai
 from dotenv import find_dotenv, load_dotenv
+from langchain.chat_models import ChatOpenAI
+from langchain.document_loaders import WebBaseLoader
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.vectorstores.faiss import FAISS
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.llms.openai import OpenAI
+from langchain.chains import RetrievalQA
 
 _ = load_dotenv(find_dotenv())  # read local .env file
 
@@ -69,6 +76,23 @@ def extract(input: str):
     client.update_context(role="system", content=rule)
     client.update_context(role="user", content=input)
     return client.get_completion_from_messages(client.context)
+
+def wiki(input:str):
+    """Retrieve information from Wikipedia."""
+    context, prompt = input.split(":")
+    wikipedia_url = "https://en.wikipedia.org/wiki/"
+    context_url = wikipedia_url+context
+    loader = WebBaseLoader(context_url)
+    documents = loader.load()
+    text_spliter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+    texts = text_spliter.split_documents(documents=documents)
+    embeddings = OpenAIEmbeddings()
+    docsearch = FAISS.from_documents(texts, embeddings)
+    
+    qa = RetrievalQA.from_chain_type(llm=OpenAI(), retriever=docsearch.as_retriever())
+
+    return qa.run(prompt)
+
 
 
 if __name__ == "__main__":

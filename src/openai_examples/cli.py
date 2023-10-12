@@ -5,7 +5,7 @@ import click
 from click_shell import shell
 
 from openai_examples import __version__
-from openai_examples.chatbot import extract, run
+from openai_examples.chatbot import extract, wiki, run
 
 __all__ = [
     "main",
@@ -76,6 +76,19 @@ def click_extract(input: str):
     a tabular representation of the same.
     """
     click.echo(extract(" ".join(input)))
+
+@main.command("wiki")
+@input_argument
+def click_wiki(input: str):
+    """
+    Chatbot usage to get information from Wikipedia.
+
+    Example:
+        wiki Tea: When was it discovered?
+
+    Returns: Tea was discovered in 59 BC.
+    """
+    click.echo(wiki(" ".join(input)))
 
 
 if __name__ == "__main__":

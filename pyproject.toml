@@ -16,6 +16,10 @@ python-dotenv = "^1.0.0"
 openai = "^0.27.6"
 click-shell = "^2.1"
 poetry = "^1.4.2"
+langchain = "^0.0.313"
+beautifulsoup4 = "^4.12.2"
+faiss-cpu = "^1.7.4"
+tiktoken = "^0.5.1"
 
 
 [tool.poetry.dev-dependencies]
